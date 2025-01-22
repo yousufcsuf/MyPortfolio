@@ -9,8 +9,17 @@ function App() {
 
   return (
     <>
-      <div>
-        <Button>Shadcn ready</Button>
+      {/*Navigation bar */}
+      <div class="flex flex-row-reverse space-x-4 space-x-reverse border-solid border-2 border-sky-500">
+        <div>
+          <p className="text-3xl mx-2 mr-16"> Skills</p>
+        </div>
+        <div>
+          <p className="text-3xl mx-2">Professional Experience</p>
+        </div>
+        <div>
+          <p className="text-3xl mx-2">Home</p>
+        </div>
       </div>
     </>
   );
