@@ -2,9 +2,17 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Timeline from "./components/Timeline";
-
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import TabDemo from "./components/TabDemo";
 import { Button } from "@/components/ui/button";
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Skills from "./components/Skills";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -14,6 +22,9 @@ function App() {
       <div class="flex flex-row-reverse space-x-4 space-x-reverse border-solid border-2 border-sky-500 ">
         <div>
           <p className="text-3xl mx-2 mr-16"> Skills</p>
+        </div>
+        <div>
+          <p className="text-3xl mx-2">Projects</p>
         </div>
         <div>
           <p className="text-3xl mx-2">Professional Experience</p>
@@ -33,8 +44,11 @@ function App() {
         <Timeline />
       </div>
       {/*Skills*/}
-      <div className=" min-h-screen bg-slate-600">
+      <div className=" min-h-screen ">
         <p className="text-5xl">Skills </p>
+        <div className="border-solid border-2 border-sky-500 ">
+          <Skills />
+        </div>
       </div>
     </>
   );
